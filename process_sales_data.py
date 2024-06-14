@@ -108,12 +108,12 @@ def process_sales_data(sales_csv_path, orders_dir_path):
         #  Define format for the money columns
         money_fmt = workbook.add_format({'num_format': '$#,##.00'})
         #  Format each colunm
-        worksheet.set_column('A:A', 11)
-        worksheet.set_column('B:B', 13)
-        worksheet.set_column('C:E', 15)
-        worksheet.set_column('F:G', 13, money_fmt)
-        worksheet.set_column('H:H', 10)
-        worksheet.set_column('I:I', 30)
+        worksheet.set_column('A:A', 12)
+        worksheet.set_column('B:B', 14)
+        worksheet.set_column('C:E', 16)
+        worksheet.set_column('F:G', 15, money_fmt)
+        worksheet.set_column('H:H', 12)
+        worksheet.set_column('I:I', 31)
         #  Close the Excelwriter 
         writer.close()
     return
